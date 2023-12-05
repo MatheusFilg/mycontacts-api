@@ -3,14 +3,15 @@
 const express = require('express')
 require('express-async-errors')
 
-const routes = require('./routes')
 const app = express()
 const cors = require('./app/middlewares/cors')
+app.use(cors)
+
+const routes = require('./routes')
 const erroHandler = require('./app/middlewares/errorHandler')
 
 // ordem importa, nesse caso é importante o middleware vir primeiro para o body ser aplicado
 app.use(express.json())
-app.use(cors)
 app.use(routes)
 app.use(erroHandler)
 
