@@ -6,7 +6,7 @@
   "author": "Matheus F",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "dev": "pm2 src/index.js",
     "start": "node index.js",
     "lint": "eslint src --ext .js --fix"
   },
