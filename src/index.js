@@ -2,7 +2,7 @@
 
 const express = require('express')
 require('express-async-errors')
-
+const port = process.env.PORT || 3001
 const app = express()
 const cors = require('./app/middlewares/cors')
 app.use(cors)
@@ -15,4 +15,4 @@ app.use(express.json())
 app.use(routes)
 app.use(erroHandler)
 
-app.listen(3001, () => console.log('Server started at http://localhost:3001'))
+app.listen(port, () => console.log(`${port}`))
