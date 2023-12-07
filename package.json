@@ -6,8 +6,12 @@
   "author": "Matheus F",
   "license": "MIT",
   "scripts": {
-    "dev": "pm2 src/index.js",
+    "dev": "nodemon src/index.js",
     "start": "node index.js",
+    "build": "npm install && npm run build:app",
+    "build:app": "tsc",
+    "prestart": "npm run build",
+    "prebuild": "npm install -g typescript",
     "lint": "eslint src --ext .js --fix"
   },
   "dependencies": {
