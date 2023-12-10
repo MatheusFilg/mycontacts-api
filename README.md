@@ -20,7 +20,7 @@ O projeto foi desenvolvido, porém alguns pontos podem ser melhorados:
 
 ## 📫 Contribuindo para o MyContacts-Api
 
-Para contribuir com <nome_do_projeto>, siga estas etapas:
+Para contribuir com MyContacts-Api, siga estas etapas:
 
 1. Fork este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
